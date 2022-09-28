@@ -1,0 +1,827 @@
+/*Aqui a proposta geral para o portal. Com as cores baseadas na bandeira do Catar
+As famílias de fonte são do Google Fonts e a combinação é Marriweather para títulos e Open Sans para texto em grande fluxo.*/
+
+/* Configuração Geral */
+body {
+    font-family: sans-serif;
+    background-color: linen;
+
+}
+
+h1,h2,h3{
+    color: whitesmoke;
+    font-family: 'Merriweather';
+    background-color: maroon;
+
+}
+
+p,ul,ol,h4,h5,h6 {
+    color: maroon;
+    font-family: "Open Sans";
+}
+
+
+/* Index. Luy Mattos */
+.menuI { 
+    display: block;/*Define que o menu sera exibido como um bloco.*/
+    margin-left: 400px;}
+.menuI h1 { 
+    display: none; /*Retirar a exibição da tela.*/}
+.menu li { 
+    display: inline-block;/*Exibe um bloco em uma mesma linha.*/
+    list-style: none; /*Retirar decoração da lista.*/ 
+    padding: 10px;/*Espaçamento dentro do bloco.*/
+    margin: 4px;/*Espaçamento fora do bloco.*/
+    transition: 0.5s; /*Faz a transição do cinza mais claro para o mais escuro.*/
+    border-radius: 5px;}
+.menu a { 
+    color: maroon;/*Cor da Fonte*/
+    text-decoration: none; /* Retirou a linha de decoração do link.*/}
+.menu li:hover {
+    background-color: maroon; }
+.menu a:hover {
+    color:aliceblue; /*Muda a cor da fonte quando passa o mouse por cima.*/}
+
+table{
+    border-top: 1.5px solid maroon; /*Borda*/
+    border-collapse: collapse; /* Junção das bordas da tabela.*/
+    margin-left: 70px; /* Margin Esquerda.*/
+    margin: 30px; /* Margin Total.*/}
+th { 
+    background-color: maroon; /* Cor do Fundo */
+    color: whitesmoke; /* Cor da Fonte */
+    padding: 10px; /* Espaçamento interno */} 
+td { 
+    background-color: whitesmoke; /* Cor do Fundo */
+    border: 1.5px solid maroon; /* Borda */
+    padding: 15px; /* Espaçamento interno */
+    color: maroon; /* Cor da Fonte */}
+
+
+/*--------- Grupos => Dev: Luy Mattos---------*/
+
+        /* Divisão dos Grupos */
+        #interfaceG { position: absolute;}
+        #titulo-prin { 
+            margin-left: 310px;}
+        #tabela1 { 
+            margin-left: 100px;
+            position: relative;}
+        #tabela2{     
+            margin-top: -683px;
+            margin-left: 650px;
+            position: relative;}
+        .tab { 
+            margin-top: 25px;
+            border: 2px solid #000000; /* Borda: tamanho formato cor;*/
+            width: 530px;/* Largura */
+            text-align: center; /* Centralizar texto*/
+            border-collapse: collapse; /* Juntar as bordas*/}
+            .tab td { 
+            background-color: #e4e3e3;
+            border: 2px solid #000000;
+            height: 60px;
+            padding: 15px; /* Margin Interna */
+            font-size: 12pt;}
+            td img { 
+                height: 45px;/*Altura*/
+                width: 85px;/*Largura*/}
+        .grupo { 
+            padding: 10px 10px 10px 0px;
+            font-size: 15pt;}
+        
+                /* Titulo e texto */
+        .divisao { 
+            border: 1px solid #000000;
+            margin-top: 70px;
+            margin-left: 80px;
+            width: 1120px;}
+        .titulo-seg { 
+            margin-top: 80px;
+            margin-left: 210px ;}
+        .parag { 
+            margin-left: 270px;
+            margin-top: 10px;}
+        
+                /* Jogos - Data, Hora e Estádio */
+        #grupoA { 
+            width: 800px;
+            height: 600px;
+            margin-top: 40px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+        .GA {
+            border: 2px solid #000000;
+            border-collapse: collapse;}
+            .GA th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GA td {
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoB { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+        .GB { 
+            border: 2px solid #000000;
+            border-collapse: collapse;}
+            .GB th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GB td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoC { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+            .GC { 
+                border: 2px solid #000000;
+                border-collapse: collapse;}
+            .GC th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GC td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoD { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+            .GD { 
+                border: 2px solid #000000;
+                border-collapse: collapse;}
+            .GD th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GD td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoE { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        
+        }
+            .GE { 
+                border: 2px solid #000000;
+                border-collapse: collapse;}
+            .GE th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GE td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoF { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+            .GF { 
+                border: 2px solid #000000;
+                border-collapse: collapse;}
+            .GF th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GF td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoG { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+            .GG { 
+                border: 2px solid #000000;
+                border-collapse: collapse;}
+            .GG th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GG td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+        
+        #grupoH { 
+            width: 800px;
+            height: 600px;
+            margin-top: 100px;
+            margin-left: 300px;
+            margin-bottom: 100px;
+        }
+            .GH { 
+                border: 2px solid #000000;
+                border-collapse: collapse;}
+            .GH th { 
+                font-size: 15pt;
+                padding: 10px;}
+            .GH td { 
+                background-color: #e4e3e3;
+                border: 2px solid #000000;
+                padding: 15px;
+                text-align: center;}
+                
+        /*--------------------------------------------*/
+
+    /*Aqui começa o CSS da página do Lucas com o Modal, não mexer porque dá muito problema tentar simplificar */
+
+.btn {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+    bottom: 15px;
+}
+
+.modal {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+@keyframes animate {
+    from {
+        opacity: 1;
+    }
+
+    from {
+        opacity: 0;
+    }
+
+}
+
+.fechar {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn1 {
+    padding: 5px;
+    background: black;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal1 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+
+
+
+.fechar1 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn2 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal2 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+
+.fechar2 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn3 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal3 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+
+
+
+.fechar3 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn4 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal4 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar4 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn5 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal5 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar5 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn6 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal6 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar6 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn7 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal7 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar7 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn8 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal8 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar8 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn9 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal9 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar9 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn10 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal10 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar10 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+
+}
+
+.btn11 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal11 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar11 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn12 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal12 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar12 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn13 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal13 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar13 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn14 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal14 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar14 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+.btn15 {
+    padding: 5px;
+    background: black;
+    display: inline-flex;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    top: 15px;
+    bottom: 15px;
+}
+
+.modal15 {
+
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    background-color: gainsboro;
+    transform: translate(-50%, -50%);
+    display: none;
+    position: absolute;
+    animation: animate;
+    animation-duration: 800ms;
+}
+
+.fechar15 {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+/*Aqui aqui termina o CSS da página do Lucas com o Modal, não mexi porque dá muito problema tentar simplificar */
